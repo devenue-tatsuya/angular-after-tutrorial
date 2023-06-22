@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { User } from '../user';
 
 @Component({
   selector: 'app-user-list-item',
@@ -9,5 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./user-list-item.component.scss']
 })
 export class UserListItemComponent {
-
+  @Input()
+  user!: User;
 }
